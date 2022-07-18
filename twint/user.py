@@ -27,7 +27,7 @@ def User(ur):
     legacy_data = ur['data']['user']['legacy'] 
 
     _usr.name = legacy_data.get("name", "")
-    _usr.username = legacy_data.get("username", "")
+    _usr.username = legacy_data.get("screen_name", "")
     _usr.bio = legacy_data.get("description", "")
     _usr.location = legacy_data.get('location', "")
     _usr.url = legacy_data.get("url", "")
